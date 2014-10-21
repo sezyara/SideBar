@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="FullScreenSB" parent="android:style/Theme.Holo.Light.NoActionBar.Fullscreen"></style>
+
+    <style name="CheckBoxSB" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/sb_btn_check_holo_dark</item>
+    </style>
+
+    <style name="RadioButtonSB" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/sb_btn_radio_holo_dark</item>
+    </style>
+
+    <style name="ButtonSB" parent="android:Widget.Button">
+        <item name="android:background">@drawable/sb_btn_default_holo_dark</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="ImageButtonSB" parent="android:Widget.ImageButton">
+        <item name="android:background">@drawable/sb_btn_default_holo_dark</item>
+    </style>
+
+    <style name="SeekBarSB" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/sb_scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/sb_scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+        <item name="android:thumb">@drawable/sb_scrubber_control_selector_holo_dark</item>
+        <item name="android:thumbOffset">16dip</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+
+    <style name="ToggleSB" parent="android:Widget.Button.Toggle">
+        <item name="android:background">@drawable/sb_btn_toggle_holo_dark</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="ListViewSB" parent="android:Widget.ListView">
+        <item name="android:listSelector">@drawable/sb_list_selector_holo_dark</item>
+    </style>
+
+    <style name="ListViewSB.White" parent="android:Widget.ListView.White">
+        <item name="android:listSelector">@drawable/sb_list_selector_holo_dark</item>
+    </style>
+
+    <style name="SpinnerItemSB" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+</resources>

@@ -1,0 +1,16 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="SBTheme" parent="@android:Theme.Material">
+        <item name="android:windowBackground">@color/sb_windowBackground</item>
+        <item name="android:colorPrimary">#E84E40</item>
+        <item name="android:colorPrimaryDark">#D2473A</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:colorAccent">#E84E40</item>
+    </style>
+
+    <style name="FullScreenSB" parent="@android:Theme.Material.NoActionBar">
+        <item name="android:colorPrimaryDark">#D2473A</item>
+        <item name="android:navigationBarColor">#D2473A</item>
+    </style>
+
+</resources>

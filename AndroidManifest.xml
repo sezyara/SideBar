@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.sezex.sidebar"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/SBTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenSB" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/service" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".adapter.AppListActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/applist" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".sidebar.SidebarService"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:stopWithTask="false" >
+        </service>
+
+        <activity
+            android:name=".FAQActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/faq" >
+        </activity>
+        <activity
+            android:name=".DonateActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/donate" >
+        </activity>
+
+        <receiver android:name=".BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".RestartReceiver" >
+            <intent-filter>
+                <action android:name="ru.sezex.sidebar.START" />
+                <action android:name="ru.sezex.sidebar.STOP" />
+                <action android:name="ru.sezex.sidebar.TOGGLE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

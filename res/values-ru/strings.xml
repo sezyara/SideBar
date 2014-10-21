@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Бок. панель</string>
+    <string name="service">Боковая панель</string>
+    <string name="service_running">Служба запущена</string>
+    <string name="left">Слева</string>
+    <string name="right">Справа</string>
+    <string name="add_app">Добавить приложение</string>
+    <string name="group">Группа</string>
+    <string name="settings_default">По умолчанию</string>
+    <string name="create_group">Создать группу</string>
+    <string name="create_group_done">Группа была успешно создана</string>
+    <string name="create_group_empty1">Выберите приложение в первой позиции.</string>
+    <string name="create_group_empty2">Выберите приложение во второй позиции.</string>
+    <string name="create_group_warning">Примечание: группы работают только в режимах запуска XHaloFloatingWindow или XMultiWindow.</string>
+    <string name="create_group_from_service">Приложения были автоматически определены. Пожалуйста, подтвердите перед сохранением.</string>
+    <string name="create_group_first">Выберите первое приложение\n(откроется сверху/слева)</string>
+    <string name="create_group_second">Выберите второе приложение\n(откроется снизу/справа)</string>
+    <string name="pref_main_header">Основное</string>
+    <string name="pref_toggle_service_title">Управление</string>
+    <string name="pref_toggle_service_summary">Показать/скрыть боковую панель</string>
+    <string name="pref_start_on_boot_title">Автозагрузка</string>
+    <string name="pref_start_on_boot_summary">Запускать вместе с системой</string>
+    <string name="pref_launch_mode_title">Режим запуска приложений</string>
+    <string name="pref_launch_mode_normally">По умолчанию</string>
+    <string name="pref_launch_mode_pa_halo">ParanoidAndroid Halo</string>
+    <string name="pref_launch_mode_xhfw">XHaloFloatingWindow</string>
+    <string name="pref_launch_mode_xmw">XMultiWindow</string>
+    <string name="pref_launch_mode_error_xhfw">XHaloFloatingWindow не установлен.\nБез него данный режим не будет работать.</string>
+    <string name="pref_launch_mode_error_xmw">XMultiWindow не установлен.\nБез него данный режим не будет работать.</string>
+    <string name="pref_select_app_title">Выберите приложения</string>
+    <string name="pref_select_app_summary">Добавление приложений в боковую панель</string>
+    <string name="applist">Приложения и группы</string>
+    <string name="press_menu">Нажмите кнопку \"МЕНЮ\"</string>
+    <string name="pref_about">Информация</string>
+    <string name="pref_appearance_header">Внешний вид</string>
+    <string name="pref_sidebar_position_title">Позиция</string>
+    <string name="pref_sidebar_position_summary">Выберите сторону экрана, где будет боковая панель</string>
+    <string name="pref_tab_size_title">Размер ярлыка</string>
+    <string name="pref_label_size_title">Размер подписи</string>
+    <string name="pref_label_size_summary">Потребуется перезапуск приложения</string>
+    <string name="pref_animation_time_title">Скорость анимации</string>
+    <string name="pref_animation_time_summary">Скорость анимации боковой панели</string>
+    <string name="app_list_empty">Нет приложений в списке.\nПожалуйста, выберите приложения в настройках.</string>
+    <string name="app_launch_error">Ошибка при запуске приложения:\n</string>
+    <string name="app_info">Боковая панель</string>
+    <string name="app_info_summary">Версия: 2.0\nАвтор: Sezoid (SZ)</string>
+    <string name="support">Поддержка</string>
+    <string name="support_summary">Написать разработчику</string>
+    <string name="webpage">Веб-сайт</string>
+    <string name="webpage_summary">Перейти на страницу разработчика</string>
+    <string name="faq">Вопрос/Ответ</string>
+    <string name="donate">Пожертвование</string>
+    <string name="donate_content">"Приветствую тебя, мой друг! Если вам нравится мое приложение, не будь жадным, вышли пару монет на хлеб :D\n\n<b><font fgcolor="white">WebMoney:</font></b>\nR384715111078\nZ551181494432"</string>
+    <string name="faq_content"><font fgcolor="white"><b>Как сменить размер подписи иконок?</b></font>\n\nДанная опция присутствует в главном меню приложения. После изменения данного параметра вы должны \"Показать/скрыть боковую панель\".\n\n\nПишите в поддержку и FAQ будет дополнен!</string>
+    <string name="pref_column_number_title">Количество колонок</string>
+    <string name="pref_column_number_summary">Количество колонок в боковой панели</string>
+    <string name="pref_keep_app_bg_title">Оставаться в фоне</string>
+    <string name="pref_keep_app_bg_summary">Предотвращать закрытие приложения при нехватке ОЗУ</string>
+    <string name="pref_tab_alpha_title">Прозрачность ярлыка</string>
+
+</resources>
