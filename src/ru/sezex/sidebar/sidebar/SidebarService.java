@@ -98,13 +98,20 @@ public class SidebarService extends Service {
 			Notification.Builder n = new Notification.Builder(this)
 					.setContentTitle(getResources().getText(R.string.service))
 					.setSmallIcon(R.drawable.notification)
-					.setShowWhen(false)
 					.setContentText(
 							getResources().getText(R.string.service_running))
 					.setContentIntent(intent);
 
 			if (Build.VERSION.SDK_INT >= 16) {
 				n.setPriority(Notification.PRIORITY_MIN);
+				startForeground(99999, n.build());
+			} else {
+				startForeground(99999, n.getNotification());
+			}
+
+			if (Build.VERSION.SDK_INT >= 17) {
+				n.setPriority(Notification.PRIORITY_MIN);
+				n.setShowWhen(false);
 				startForeground(99999, n.build());
 			} else {
 				startForeground(99999, n.getNotification());
@@ -172,7 +179,6 @@ public class SidebarService extends Service {
 			mWindowManager.removeView(v);
 		} catch (Exception e) {
 		}
-		;
 	}
 
 	public void addView(View v) {
@@ -197,7 +203,6 @@ public class SidebarService extends Service {
 			mWindowManager.addView(v, params);
 		} catch (Exception e) {
 		}
-		;
 	}
 
 	public void showBar() {
