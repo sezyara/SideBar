@@ -17,7 +17,7 @@
     <string name="create_group_from_service">Приложения были автоматически определены. Пожалуйста, подтвердите перед сохранением.</string>
     <string name="create_group_first">Выберите первое приложение\n(откроется сверху/слева)</string>
     <string name="create_group_second">Выберите второе приложение\n(откроется снизу/справа)</string>
-    <string name="pref_main_header">Основное</string>
+    <string name="pref_main_header">ОСНОВНОЕ</string>
     <string name="pref_toggle_service_title">Управление</string>
     <string name="pref_toggle_service_summary">Показать/скрыть боковую панель</string>
     <string name="pref_start_on_boot_title">Автозагрузка</string>
@@ -33,8 +33,8 @@
     <string name="pref_select_app_summary">Добавление приложений в боковую панель</string>
     <string name="applist">Приложения и группы</string>
     <string name="press_menu">Нажмите кнопку \"МЕНЮ\"</string>
-    <string name="pref_about">Информация</string>
-    <string name="pref_appearance_header">Внешний вид</string>
+    <string name="pref_about">ИНФОРМАЦИЯ</string>
+    <string name="pref_appearance_header">ВНЕШНИЙ ВИД</string>
     <string name="pref_sidebar_position_title">Позиция</string>
     <string name="pref_sidebar_position_summary">Выберите сторону экрана, где будет боковая панель</string>
     <string name="pref_tab_size_title">Размер ярлыка</string>
@@ -52,7 +52,7 @@
     <string name="webpage_summary">Перейти на страницу разработчика</string>
     <string name="faq">Вопрос/Ответ</string>
     <string name="donate">Пожертвование</string>
-    <string name="donate_content">"Приветствую тебя, мой друг! Если вам нравится мое приложение, не будь жадным, вышли пару монет на хлеб :D\n\n<b>WebMoney:</b>\nR384715111078\nZ551181494432"</string>
+    <string name="donate_content">"Приветствую тебя, мой друг! Если тебе нравится мое приложение, не будь жадным, вышли пару монет на хлеб :D\n\n<b>WebMoney:</b>\nR384715111078\nZ551181494432"</string>
     <string name="faq_content"><b>Как сменить размер подписи иконок?</b>\n\nДанная опция присутствует в главном меню приложения. После изменения данного параметра вы должны \"Показать/скрыть боковую панель\".\n\n\nПишите в поддержку и FAQ будет дополнен!</string>
     <string name="pref_column_number_title">Количество колонок</string>
     <string name="pref_column_number_summary">Количество колонок в боковой панели</string>

@@ -18,9 +18,9 @@
     <string name="create_group_first">Choose the first app\n(opens at top or left)</string>
     <string name="create_group_second">Choose the second app\n(opens at bottom or right)</string>
     <string name="applist">Apps and groups</string>
-    <string name="pref_about">Information</string>
+    <string name="pref_about">INFORMATION</string>
     <string name="press_menu">Press to \"MENU\" button</string>
-    <string name="pref_main_header">Main</string>
+    <string name="pref_main_header">MAIN</string>
     <string name="pref_toggle_service_title">Toggle Service</string>
     <string name="pref_toggle_service_summary">Show/hide the sidebar</string>
     <string name="pref_start_on_boot_title">Start on Boot</string>
@@ -34,7 +34,7 @@
     <string name="pref_launch_mode_error_xmw">XMultiWindow does not appear to be installed.\nThis launch mode will not work without it.</string>
     <string name="pref_select_app_title">Select Apps</string>
     <string name="pref_select_app_summary">Choose the apps to appear in the sidebar</string>
-    <string name="pref_appearance_header">Appearance</string>
+    <string name="pref_appearance_header">APPEARANCE</string>
     <string name="pref_sidebar_position_title">Sidebar Position</string>
     <string name="pref_sidebar_position_summary">Select the side of the screen to show the sidebar</string>
     <string name="pref_tab_size_title">Tab Size</string>

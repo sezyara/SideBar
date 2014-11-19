@@ -8,15 +8,18 @@
             android:title="@string/pref_toggle_service_title" />
 
         <CheckBoxPreference
+            android:defaultValue="true"
             android:key="keep_app_bg"
             android:summary="@string/pref_keep_app_bg_summary"
             android:title="@string/pref_keep_app_bg_title" />
         <CheckBoxPreference
+            android:defaultValue="true"
             android:key="start_on_boot"
             android:summary="@string/pref_start_on_boot_summary"
             android:title="@string/pref_start_on_boot_title" />
 
         <ListPreference
+            android:defaultValue="0"
             android:entries="@array/launch_mode_entries"
             android:entryValues="@array/launch_mode_values"
             android:key="launch_mode"
@@ -29,7 +32,7 @@
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_appearance_header" >
         <ListPreference
-            android:defaultValue="1"
+            android:defaultValue="0"
             android:entries="@array/sidebar_position_entries"
             android:entryValues="@array/sidebar_position_values"
             android:key="sidebar_position"
@@ -104,7 +107,7 @@
             android:title="@string/webpage" >
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="http://sezex.ru/" />
+                android:data="http://sezex.ru/sidebar/" />
         </Preference>
     </PreferenceCategory>
 

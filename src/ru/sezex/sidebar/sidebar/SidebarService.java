@@ -98,6 +98,7 @@ public class SidebarService extends Service {
 			Notification.Builder n = new Notification.Builder(this)
 					.setContentTitle(getResources().getText(R.string.service))
 					.setSmallIcon(R.drawable.notification)
+					.setTicker(getResources().getText(R.string.service))
 					.setContentText(
 							getResources().getText(R.string.service_running))
 					.setContentIntent(intent);

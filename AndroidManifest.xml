@@ -58,11 +58,17 @@
             android:name=".FAQActivity"
             android:excludeFromRecents="true"
             android:label="@string/faq" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".DonateActivity"
             android:excludeFromRecents="true"
             android:label="@string/donate" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
         </activity>
 
         <receiver android:name=".BootReceiver" >

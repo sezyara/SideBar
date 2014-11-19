@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="sb_windowBackground">#212121</color>
+    <color name="colorPrimary">#E84E40</color>
+    <color name="colorPrimaryDark">#D2473A</color>
 </resources>

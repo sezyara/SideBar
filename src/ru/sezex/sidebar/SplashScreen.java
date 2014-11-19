@@ -28,6 +28,6 @@ public class SplashScreen extends Activity {
 				SplashScreen.this.finish();
 			}
 
-		}, 4000); // 4 Seconds
+		}, 3000); // 3 Seconds
 	}
 };
