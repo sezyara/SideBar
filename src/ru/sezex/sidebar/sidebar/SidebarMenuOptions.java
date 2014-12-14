@@ -42,6 +42,7 @@ public class SidebarMenuOptions {
 
 		ActivityManager am = (ActivityManager) c
 				.getSystemService(Context.ACTIVITY_SERVICE);
+		@SuppressWarnings("deprecation")
 		List<RunningTaskInfo> list = am.getRunningTasks(5);
 		for (RunningTaskInfo info : list) {
 			if (info.numActivities > 0) {

@@ -151,8 +151,6 @@ public class SidebarService extends Service {
 		if (isStoppable) {
 			isSidebarShown = false;
 			isStoppable = false;
-			mHiddenSidebar.animateView(false);
-			mShownSidebar.animateView(false);
 			new Handler().postDelayed(new Runnable() {
 				@Override
 				public void run() {
