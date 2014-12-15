@@ -49,11 +49,14 @@ public class AppListActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuItem add = menu.add(Menu.NONE, ID_ADD_APP, 0, R.string.add_app);
-		add.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+		add.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+		add.setIcon(R.drawable.add);
 
-		MenuItem create = menu.add(Menu.NONE, ID_CREATE_GROUP, 0,
-				R.string.create_group);
-		create.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+		/*
+		 * MenuItem create = menu.add(Menu.NONE, ID_CREATE_GROUP, 0,
+		 * R.string.create_group);
+		 * create.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+		 */
 		return true;
 	}
 

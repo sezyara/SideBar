@@ -31,7 +31,7 @@
     <string name="pref_launch_mode_error_xmw">XMultiWindow не установлен.\nБез него данный режим не будет работать.</string>
     <string name="pref_select_app_title">Выберите приложения</string>
     <string name="pref_select_app_summary">Добавление приложений в боковую панель</string>
-    <string name="applist">Приложения и группы</string>
+    <string name="applist">Приложения <!-- и группы --></string>
     <string name="press_menu">Нажмите кнопку \"МЕНЮ\"</string>
     <string name="pref_about">ИНФОРМАЦИЯ</string>
     <string name="pref_appearance_header">ВНЕШНИЙ ВИД</string>

@@ -6,7 +6,8 @@
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="48dp" >
+        android:layout_height="48dp"
+        android:visibility="gone" >
 
         <EditText
             android:id="@+id/searchText"
@@ -34,7 +35,8 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:indeterminate="true" />
+        android:indeterminate="true"
+        android:visibility="gone" />
 
     <ListView
         android:id="@+id/listView1"

@@ -58,8 +58,10 @@ public class MainActivity extends Activity {
 					.setOnPreferenceClickListener(this);
 			findPreference(Common.PREF_KEY_KEEP_IN_BG)
 					.setOnPreferenceChangeListener(this);
-			findPreference(Common.PREF_KEY_LAUNCH_MODE)
-					.setOnPreferenceChangeListener(this);
+			/*
+			 * findPreference(Common.PREF_KEY_LAUNCH_MODE)
+			 * .setOnPreferenceChangeListener(this);
+			 */
 			findPreference(Common.PREF_KEY_SIDEBAR_POSITION)
 					.setOnPreferenceChangeListener(this);
 			findPreference(Common.PREF_KEY_TAB_SIZE)
