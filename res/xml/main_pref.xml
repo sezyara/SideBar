@@ -2,11 +2,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <PreferenceCategory android:title="@string/pref_main_header" >
-        <CheckBoxPreference
+        <Preference
             android:key="toggle_service"
             android:summary="@string/pref_toggle_service_summary"
             android:title="@string/pref_toggle_service_title" />
-        <CheckBoxPreference
+        <CheckBoxPreference
             android:defaultValue="true"
             android:key="keep_app_bg"
             android:summary="@string/pref_keep_app_bg_summary"
