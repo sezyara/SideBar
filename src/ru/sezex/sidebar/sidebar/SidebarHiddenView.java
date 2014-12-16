@@ -41,7 +41,6 @@ public class SidebarHiddenView extends LinearLayout {
 		LinearLayout.LayoutParams param = (LinearLayout.LayoutParams) mTab
 				.getLayoutParams();
 		param.width = Util.dp(dp, getContext());
-		;
 		mTab.setLayoutParams(param);
 	}
 
@@ -105,7 +104,6 @@ public class SidebarHiddenView extends LinearLayout {
 		if (mService.tabTouchEvent(event)) {
 			mService.mHandler.removeCallbacks(runnable);
 		}
-		;
 		return true;
 	}
 }

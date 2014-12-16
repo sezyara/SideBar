@@ -17,8 +17,6 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Rect;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.LayerDrawable;
 import android.view.LayoutInflater;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
@@ -52,33 +50,6 @@ public class SidebarHolderView extends LinearLayout {
 		mContentView = (RelativeLayout) findViewById(android.R.id.content);
 		mBarView = (RelativeLayout) findViewById(android.R.id.background);
 		mHolderView = (LinearLayout) findViewById(R.id.scroll_view_holder);
-
-		final LinearLayout settings_menu = (LinearLayout) findViewById(R.id.ll_settings_menu);
-		final ImageView iv_more_button = (ImageView) findViewById(R.id.more_button);
-		final ImageView iv_create_group = (ImageView) findViewById(R.id.iv_create_group);
-		final ImageView iv_edit = (ImageView) findViewById(R.id.iv_edit);
-		final View.OnClickListener menu_listener = new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				switch (v.getId()) {
-				case R.id.more_button:
-					settings_menu
-							.setVisibility(settings_menu.getVisibility() == View.VISIBLE ? View.GONE
-									: View.VISIBLE);
-					break;
-				case R.id.iv_create_group:
-					SidebarMenuOptions.createGroupFromTop2(getContext());
-					break;
-				case R.id.iv_edit:
-					SidebarMenuOptions.launchEditApps(getContext());
-					break;
-				}
-			}
-		};
-		settings_menu.setVisibility(View.GONE);
-		iv_more_button.setOnClickListener(menu_listener);
-		iv_create_group.setOnClickListener(menu_listener);
-		iv_edit.setOnClickListener(menu_listener);
 
 		if (mService.mBarOnRight) {
 			mBarView.setBackgroundResource(R.drawable.bg_right);
@@ -141,58 +112,25 @@ public class SidebarHolderView extends LinearLayout {
 				mItemViews = new SidebarItemView[map.size() * 2];
 
 				for (Entry<String, ?> entry : map.entrySet()) {
-					if (entry.getKey().contains(Common.SEPARATOR_GROUP)) {
-						SidebarDualItemView item = new SidebarDualItemView(
-								mService, mInflator) {
-							@Override
-							public void touchEventHelper(MotionEvent event,
-									boolean long_press_verified) {
-								itemViewTouchEventHelper(this, event,
-										long_press_verified);
-							}
-						};
-						try {
-							String[] str = entry.getKey().split(
-									Common.SEPARATOR_GROUP);
-
-							ApplicationInfo info0 = pm.getApplicationInfo(
-									str[0], 0);
-							ApplicationInfo info1 = pm.getApplicationInfo(
-									str[1], 0);
-
-							final Drawable icon0 = info0.loadIcon(pm).mutate();
-							final Drawable icon1 = info1.loadIcon(pm).mutate();
-							icon0.setAlpha((int) (0.7f * 255));
-							icon1.setAlpha((int) (0.7f * 255));
-							item.setIcon(new LayerDrawable(new Drawable[] {
-									icon0, icon1 }));
-
-							item.setLabel(info0.loadLabel(pm) + " & "
-									+ info1.loadLabel(pm));
-							item.setPkg(str[0], str[1]);
-						} catch (NameNotFoundException e) {
+					SidebarItemView item = new SidebarItemView(mService,
+							mInflator) {
+						@Override
+						public void touchEventHelper(MotionEvent event,
+								boolean long_press_verified) {
+							itemViewTouchEventHelper(this, event,
+									long_press_verified);
 						}
-						mItemViews[(Integer) entry.getValue()] = item;
-					} else {
-						SidebarItemView item = new SidebarItemView(mService,
-								mInflator) {
-							@Override
-							public void touchEventHelper(MotionEvent event,
-									boolean long_press_verified) {
-								itemViewTouchEventHelper(this, event,
-										long_press_verified);
-							}
-						};
-						try {
-							ApplicationInfo info = pm.getApplicationInfo(
-									entry.getKey(), 0);
-							item.setIcon(info.loadIcon(pm));
-							item.setLabel(info.loadLabel(pm));
-							item.setPkg(entry.getKey());
-						} catch (NameNotFoundException e) {
-						}
-						mItemViews[(Integer) entry.getValue()] = item;
+					};
+					try {
+						ApplicationInfo info = pm.getApplicationInfo(
+								entry.getKey(), 0);
+						item.setIcon(info.loadIcon(pm));
+						item.setLabel(info.loadLabel(pm));
+						item.setPkg(entry.getKey());
+					} catch (NameNotFoundException e) {
 					}
+					mItemViews[(Integer) entry.getValue()] = item;
+
 				}
 
 				insertViews();

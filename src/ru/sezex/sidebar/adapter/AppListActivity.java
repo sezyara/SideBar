@@ -7,7 +7,6 @@ import ru.sezex.sidebar.Common;
 import ru.sezex.sidebar.R;
 import ru.sezex.sidebar.Util;
 import ru.sezex.sidebar.adapter.AppChooserAdapter.AppItem;
-import ru.sezex.sidebar.sidebar.SidebarMenuOptions;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -21,7 +20,6 @@ import android.widget.ListView;
 public class AppListActivity extends Activity {
 
 	static final int ID_ADD_APP = 1;
-	static final int ID_CREATE_GROUP = 2;
 
 	SharedPreferences mPref;
 	AppListAdapter mPkgAdapter;
@@ -51,12 +49,6 @@ public class AppListActivity extends Activity {
 		MenuItem add = menu.add(Menu.NONE, ID_ADD_APP, 0, R.string.add_app);
 		add.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
 		add.setIcon(R.drawable.add);
-
-		/*
-		 * MenuItem create = menu.add(Menu.NONE, ID_CREATE_GROUP, 0,
-		 * R.string.create_group);
-		 * create.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
-		 */
 		return true;
 	}
 
@@ -65,9 +57,6 @@ public class AppListActivity extends Activity {
 		switch (item.getItemId()) {
 		case ID_ADD_APP:
 			dDialog.show(ID_ADD_APP);
-			break;
-		case ID_CREATE_GROUP:
-			SidebarMenuOptions.showGroupCreatorDialog(this, this, false);
 			break;
 		}
 		return false;

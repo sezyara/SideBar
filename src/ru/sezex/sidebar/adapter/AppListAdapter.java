@@ -1,6 +1,5 @@
 package ru.sezex.sidebar.adapter;
 
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Map;
 
@@ -57,13 +56,6 @@ public abstract class AppListAdapter extends BaseAdapter {
 								ApplicationInfo ai1 = mPackageManager
 										.getApplicationInfo(str[1], 0);
 								final PackageItem item = new PackageItem();
-								item.title = mContext.getResources().getString(
-										R.string.group)
-										+ " ("
-										+ ai0.loadLabel(mPackageManager)
-										+ " & "
-										+ ai1.loadLabel(mPackageManager) + ")";
-
 								final Drawable icon0 = ai0.loadIcon(
 										mPackageManager).mutate();
 								final Drawable icon1 = ai1.loadIcon(
@@ -151,9 +143,6 @@ public abstract class AppListAdapter extends BaseAdapter {
 					.findViewById(android.R.id.message);
 			holder.remove = (ImageButton) convertView
 					.findViewById(R.id.removeButton);
-			holder.up = (ImageButton) convertView.findViewById(R.id.upButton);
-			holder.down = (ImageButton) convertView
-					.findViewById(R.id.downButton);
 			convertView.setTag(holder);
 		}
 		final PackageItem appInfo = getItem(position);
@@ -165,22 +154,6 @@ public abstract class AppListAdapter extends BaseAdapter {
 			@Override
 			public void onClick(View v) {
 				onRemoveButtonPress(appInfo);
-			}
-		});
-		holder.up.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Collections.swap(mApps, position, position - 1);
-				notifyDataSetChanged();
-				onSwappedListPositions();
-			}
-		});
-		holder.down.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Collections.swap(mApps, position, position + 1);
-				notifyDataSetChanged();
-				onSwappedListPositions();
 			}
 		});
 		return convertView;

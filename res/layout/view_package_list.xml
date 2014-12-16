@@ -6,41 +6,6 @@
     android:gravity="center_vertical"
     android:minHeight="48dp" >
 
-    <LinearLayout
-        android:layout_width="50dp"
-        android:layout_height="52dp"
-        android:layout_marginLeft="-4dp"
-        android:layout_marginRight="-4dp"
-        android:orientation="vertical"
-        android:visibility="gone" >
-
-        <ImageButton
-            android:id="@+id/upButton"
-            style="@android:style/Widget.Holo.Button.Borderless"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:baselineAlignBottom="true"
-            android:cropToPadding="true"
-            android:padding="2dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_up" />
-
-        <ImageButton
-            android:id="@+id/downButton"
-            style="@android:style/Widget.Holo.Button.Borderless"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:baselineAlignBottom="true"
-            android:cropToPadding="true"
-            android:padding="2dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_down" />
-    </LinearLayout>
-
     <ImageView
         android:id="@+android:id/icon"
         android:layout_width="50dp"

@@ -1,7 +1,6 @@
 package ru.sezex.sidebar.sidebar;
 
 import ru.sezex.sidebar.Common;
-import ru.sezex.sidebar.IntentUtil;
 import ru.sezex.sidebar.Util;
 
 import android.annotation.SuppressLint;
@@ -136,12 +135,8 @@ public class SidebarDraggedOutView extends ImageView {
 		final int screen_width = dm.widthPixels;
 		final int screen_height = dm.heightPixels;
 
-		if (mItemView instanceof SidebarDualItemView) {
-			mIconPosition = IntentUtil.SIDE_FULLSCREEN;
-		} else {
-			mIconPosition = WindowPositionOutline.getPositionOfTouch(x, y,
-					screen_width, screen_height);
-		}
+		mIconPosition = WindowPositionOutline.getPositionOfTouch(x, y,
+				screen_width, screen_height);
 
 		int[] outline_param = WindowPositionOutline.getOutlineParams(
 				screen_width, screen_height, mIconPosition);

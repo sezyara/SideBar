@@ -18,12 +18,12 @@
             android:summary="@string/pref_start_on_boot_summary"
             android:title="@string/pref_start_on_boot_title" />
 
-        <!-- <ListPreference
+        <ListPreference
             android:defaultValue="0"
             android:entries="@array/launch_mode_entries"
             android:entryValues="@array/launch_mode_values"
             android:key="launch_mode"
-            android:title="@string/pref_launch_mode_title" /> -->
+            android:title="@string/pref_launch_mode_title" />
 
         <Preference
             android:key="select_apps"

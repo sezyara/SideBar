@@ -4,8 +4,6 @@
     <string-array name="launch_mode_entries">
         <item>@string/pref_launch_mode_normally</item>
         <item>@string/pref_launch_mode_pa_halo</item>
-        <item>@string/pref_launch_mode_xhfw</item>
-        <item>@string/pref_launch_mode_xmw</item>
     </string-array>
     <string-array name="launch_mode_values">
         <item>0</item>
