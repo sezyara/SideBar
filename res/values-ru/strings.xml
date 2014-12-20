@@ -45,5 +45,6 @@
     <string name="pref_keep_app_bg_title">Оставаться в фоне</string>
     <string name="pref_keep_app_bg_summary">Предотвращать закрытие приложения при нехватке ОЗУ</string>
     <string name="pref_tab_alpha_title">Прозрачность ярлыка</string>
+    <string name="pref_bar_alpha_title">Прозрачность боковой панели</string>
 
 </resources>

@@ -44,6 +44,14 @@
             maximum="100"
             minimum="0"
             suffix="%"
+            android:dialogTitle="@string/pref_bar_alpha_title"
+            android:key="bar_alpha"
+            android:title="@string/pref_bar_alpha_title" />
+        <ru.sezex.sidebar.preference.SeekBarDialog
+            defaultValue="100"
+            maximum="100"
+            minimum="0"
+            suffix="%"
             android:dialogTitle="@string/pref_tab_alpha_title"
             android:key="tab_alpha_hidden"
             android:title="@string/pref_tab_alpha_title" />

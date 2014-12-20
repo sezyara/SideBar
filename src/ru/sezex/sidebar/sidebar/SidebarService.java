@@ -74,6 +74,10 @@ public class SidebarService extends Service {
 		mShownSidebar.setTabSize(tab_size);
 		mHiddenSidebar.setTabSize(tab_size);
 
+		final int bar_alpha_percentage = main_prefs.getInt(
+				Common.PREF_KEY_BAR_ALPHA, Common.PREF_DEF_BAR_ALPHA);
+		mShownSidebar.setBarAlpha(bar_alpha_percentage * 0.01f);
+
 		final int hidden_tab_alpha_percentage = main_prefs.getInt(
 				Common.PREF_KEY_TAB_ALPHA_HIDDEN,
 				Common.PREF_DEF_TAB_ALPHA_HIDDEN);

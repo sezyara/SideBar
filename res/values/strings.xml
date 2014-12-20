@@ -46,5 +46,6 @@
     <string name="pref_keep_app_bg_title">Keep Service in Background</string>
     <string name="pref_keep_app_bg_summary">Prevent the system from killing the sidebar in very low memory situations by showing a notification</string>
     <string name="pref_tab_alpha_title">Tab Alpha</string>
+    <string name="pref_bar_alpha_title">Sidebar Alpha</string>
 
 </resources>

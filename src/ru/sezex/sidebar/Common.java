@@ -31,6 +31,10 @@ public class Common {
 	public static final String PREF_DEF_LAUNCH_MODE = "0";
 	public static final String PREF_KEY_TAB_ALPHA_HIDDEN = "tab_alpha_hidden";
 	public static final int PREF_DEF_TAB_ALPHA_HIDDEN = 100;
+
+	public static final String PREF_KEY_BAR_ALPHA = "bar_alpha";
+	public static final int PREF_DEF_BAR_ALPHA = 100;
+
 	public static final String PREF_KEY_TAB_SIZE = "tab_size";
 	public static final int PREF_DEF_TAB_SIZE = 36;
 	public static final String PREF_KEY_LABEL_SIZE = "label_size";

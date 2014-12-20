@@ -86,6 +86,10 @@ public class SidebarHolderView extends LinearLayout {
 		bar_param.width = mService.mAppColumns * Util.dp(dp, mService);
 	}
 
+	public void setBarAlpha(float decimal) {
+		mBarView.setAlpha(decimal);
+	}
+
 	public void setTabSize(int dp) {
 		RelativeLayout.LayoutParams param = (RelativeLayout.LayoutParams) mTabView
 				.getLayoutParams();
