@@ -48,7 +48,7 @@
             android:key="bar_alpha"
             android:title="@string/pref_bar_alpha_title" />
         <ru.sezex.sidebar.preference.SeekBarDialog
-            defaultValue="100"
+            defaultValue="85"
             maximum="100"
             minimum="0"
             suffix="%"

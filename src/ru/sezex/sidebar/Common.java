@@ -30,7 +30,7 @@ public class Common {
 	public static final String PREF_KEY_LAUNCH_MODE = "launch_mode";
 	public static final String PREF_DEF_LAUNCH_MODE = "0";
 	public static final String PREF_KEY_TAB_ALPHA_HIDDEN = "tab_alpha_hidden";
-	public static final int PREF_DEF_TAB_ALPHA_HIDDEN = 100;
+	public static final int PREF_DEF_TAB_ALPHA_HIDDEN = 85;
 
 	public static final String PREF_KEY_BAR_ALPHA = "bar_alpha";
 	public static final int PREF_DEF_BAR_ALPHA = 100;
