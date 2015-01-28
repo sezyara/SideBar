@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/Android/workspace/SideBar/app/src/main/res/values-v14/styles.xml -->
+    <eat-comment/>
+    <style name="ActionBarSB" parent="@android:style/Widget.Holo.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid</item>
+    </style>
+    <style name="ButtonSB" parent="android:Widget.Holo.Button">
+        <item name="android:background">@drawable/sb_btn_default_holo_dark</item>
+    </style>
+    <style name="ImageButtonSB" parent="android:Widget.Holo.ImageButton">
+        <item name="android:background">@drawable/sb_btn_default_holo_dark</item>
+    </style>
+    <!-- From: file:/E:/Android/workspace/SideBar/app/src/main/res/values-v14/themes.xml -->
+    <eat-comment/>
+    <style name="SBTheme" parent="android:Theme.Holo">
+        <item name="android:windowBackground">@color/sb_windowBackground</item>
+        <item name="android:actionBarStyle">@style/ActionBarSB</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/sb_btn_check_holo_dark</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/sb_btn_radio_holo_dark</item>
+        <item name="android:buttonStyle">@style/ButtonSB</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonSB</item>
+        <item name="android:seekBarStyle">@style/SeekBarSB</item>
+        <item name="android:buttonStyleToggle">@style/ToggleSB</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/sb_list_selector_holo_dark</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/sb_activated_background_holo_dark</item>
+    </style>
+    <!-- From: file:/E:/Android/workspace/SideBar/app/src/main/res/values-v14/styles.xml -->
+    <eat-comment/>
+    <style name="SeekBarSB" parent="android:Widget.Holo.SeekBar">
+        <item name="android:progressDrawable">@drawable/sb_scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/sb_scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:thumb">@drawable/sb_scrubber_control_selector_holo_dark</item>
+    </style>
+    <style name="ToggleSB" parent="android:Widget.Holo.Button.Toggle">
+        <item name="android:background">@drawable/sb_btn_toggle_holo_dark</item>
+    </style>
+</resources>

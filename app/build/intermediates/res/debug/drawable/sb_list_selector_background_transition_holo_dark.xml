@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/sb_list_pressed_holo_dark"/>
+    <item android:drawable="@drawable/sb_list_longpressed_holo"/>
+
+</transition><!-- From: file:/E:/Android/workspace/SideBar/app/src/main/res/drawable/sb_list_selector_background_transition_holo_dark.xml -->

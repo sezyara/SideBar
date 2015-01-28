@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/Android/workspace/SideBar/app/src/main/res/values-v21/styles.xml -->
+    <eat-comment/>
+    <style name="DialogSB" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:colorPrimary">#E84E40</item>
+        <item name="android:colorPrimaryDark">#D2473A</item>
+        <item name="android:colorAccent">#E84E40</item>
+    </style>
+    <style name="FullScreenSB" parent="@android:Theme.Material.NoActionBar">
+        <item name="android:colorPrimary">#D2473A</item>
+        <item name="android:colorPrimaryDark">#D2473A</item>
+        <item name="android:navigationBarColor">#D2473A</item>
+    </style>
+    <style name="SBTheme" parent="@android:Theme.Material">
+        <item name="android:dialogTheme">@style/DialogSB</item>
+        <item name="android:alertDialogTheme">@style/DialogSB</item>
+        <item name="android:windowBackground">@color/sb_windowBackground</item>
+        <item name="android:colorPrimary">#E84E40</item>
+        <item name="android:colorPrimaryDark">#D2473A</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:colorAccent">#E84E40</item>
+        <item name="android:navigationBarColor">#191919</item>
+    </style>
+</resources>
