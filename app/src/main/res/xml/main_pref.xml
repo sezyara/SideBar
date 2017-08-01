@@ -108,14 +108,14 @@
             android:title="@string/support" >
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="mailto:roman@sezex.ru" />
+                android:data="mailto:sezyara@gmail.com" />
         </Preference>
         <Preference
             android:summary="@string/webpage_summary"
             android:title="@string/webpage" >
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="http://sezex.ru/sidebar/" />
+                android:data="https://romansultanov.ru/" />
         </Preference>
     </PreferenceCategory>
 
