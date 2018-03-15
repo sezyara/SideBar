@@ -1,4 +1,4 @@
-SideBar v2.0
+SideBar v2.0 (DEPRECATED)
 ======
 
 Floating application with Material Design and other. Android: 4.0 - 5.0.2
